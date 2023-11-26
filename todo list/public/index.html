@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+</head>
+
+<body style="background-color: darkslategray;">
+    <header>
+        <div>
+            <img src="./unnamed.png" alt="">
+        </div>
+    </header>
+
+
+    <center>
+        <h1 style="color: azure;">"ToDo Application"</h1> <br><br>
+        <div style="margin-bottom: 20px;">
+            <input id="fetch" type="text" placeholder="ENTER YOUR LIST ITEMS"><br><br>
+            <div class="FLEX">
+                <button class="but" onclick="addtodo()">Add Item</button>
+                <button class="but" onclick="deleteall()">Delet All</button>
+            </div>
+        </div>
+        <div class="FLEX">
+            <ul id="list">
+
+            </ul>
+        </div>
+    </center>
+    <script src="app.js"></script>
+</body>
+
+</html>
